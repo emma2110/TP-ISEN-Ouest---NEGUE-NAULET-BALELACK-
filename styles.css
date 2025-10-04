@@ -325,32 +325,6 @@ position: absolute;
   border-radius: 6px;
 }
 
-.formations-section {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-.formations-section h2 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #000;}
-
-.formations-grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.formation-item p {
-  margin-top: 8px;
-  font-weight: 500;
-  font-size: 16px;
-}
-
-
 .breadcrumb {
   max-width: 1200px;
   margin: 16px auto 24px;
@@ -443,32 +417,37 @@ position: absolute;
   margin-bottom: 12px;
 }
 
-.pb-card h3 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #111;
-  margin: 12px 0 8px;
+.pb-body {
+  padding: 16px;                      /* espace interne du contenu */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
 }
 
-.pb-card p {
+.pb-body h3 {
+  font-size: 22px;                    /* titre bien présent */
+  font-weight: 700;
+  margin: 0;
+  color: #111;
+}
+
+.pb-body p {
+  margin: 0;
   font-size: 15px;
   line-height: 1.6;
-  color: #444;
-  margin: 0 0 14px;
+  color: #333;
 }
 
-
-.pb-card .btn {
+.pb-body .btn {
+  align-self: flex-start;             /* bouton aligné à gauche */
+  margin-top: 8px;
   display: inline-block;
-  padding: 0.5rem 1.4rem;
-  border-radius: 9999px;
-  text-decoration: none;
-  background: #e30613; 
+  padding: .6rem 1.2rem;
+  border-radius: 9999px;              /* pilule */
+  background: #e30613;
   color: #fff;
-  font-weight: 600;
-  transition: background 0.2s ease;
-}
-
-.pb-card .btn:hover {
-  background: #c50512; 
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
 }
